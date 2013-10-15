@@ -1,5 +1,4 @@
-
-{<img src="https://secure.travis-ci.org/bokmann/business_time.png" />}[http://travis-ci.org/bokmann/business_time]
+This is a fork to allow multiple configurations. My use case is allowing each company in my program to set their own configration.
 
 ActiveSupport gives us some great helpers so we can do things like:
 
