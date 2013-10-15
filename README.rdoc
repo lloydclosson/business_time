@@ -1,4 +1,4 @@
-This is a fork to allow multiple configurations. My use case is allowing each company in my program to set their own configration.
+This is a fork to allow multiple configurations. My use case is allowing each company in my program needs the ability to configure their own work start and end times, work days and holidays.
 
 ActiveSupport gives us some great helpers so we can do things like:
 
