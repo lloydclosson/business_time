@@ -6,13 +6,13 @@
 class Fixnum
   include BusinessTime
   
-  def business_hours
-    BusinessHours.new(self)
+  def business_hours(config)
+    BusinessHours.new(self, config)
   end
   alias_method :business_hour, :business_hours
   
-  def business_days
-    BusinessDays.new(self)
+  def business_days(config)
+    BusinessDays.new(self, config)
   end
   alias_method :business_day, :business_days  
 end

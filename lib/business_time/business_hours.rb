@@ -1,8 +1,9 @@
 module BusinessTime
 
   class BusinessHours
-    def initialize(hours)
+    def initialize(hours, config)
       @hours = hours
+      @config = config
     end
 
     def ago
@@ -14,18 +15,18 @@ module BusinessTime
     end
 
     def after(time)
-      after_time = Time.roll_forward(time)
+      after_time = Time.roll_forward(time, @config)
       # Step through the hours, skipping over non-business hours
       @hours.times do
         after_time = after_time + 1.hour
 
         # Ignore hours before opening and after closing
-        if (after_time > Time.end_of_workday(after_time))
+        if (after_time > Time.end_of_workday(after_time, @config))
           after_time = after_time + off_hours
         end
 
         # Ignore weekends and holidays
-        while !Time.workday?(after_time)
+        while !Time.workday?(after_time, @config)
           after_time = after_time + 1.day
         end
       end
@@ -34,18 +35,18 @@ module BusinessTime
     alias_method :since, :after
 
     def before(time)
-      before_time = Time.roll_forward(time)
+      before_time = Time.roll_forward(time, @config)
       # Step through the hours, skipping over non-business hours
       @hours.times do
         before_time = before_time - 1.hour
 
         # Ignore hours before opening and after closing
-        if (before_time < Time.beginning_of_workday(before_time))
+        if (before_time < Time.beginning_of_workday(before_time, @config))
           before_time = before_time - off_hours
         end
 
         # Ignore weekends and holidays
-        while !Time.workday?(before_time)
+        while !Time.workday?(before_time, @config)
           before_time = before_time - 1.day
         end
       end
@@ -57,14 +58,13 @@ module BusinessTime
     def off_hours
       return @gap if @gap
       if Time.zone
-        gap_end = Time.zone.parse(BusinessTime::Config.beginning_of_workday)
-        gap_begin = (Time.zone.parse(BusinessTime::Config.end_of_workday)-1.day)
+        gap_end = Time.zone.parse(@config.beginning_of_workday)
+        gap_begin = (Time.zone.parse(@config.end_of_workday)-1.day)
       else
-        gap_end = Time.parse(BusinessTime::Config.beginning_of_workday)
-        gap_begin = (Time.parse(BusinessTime::Config.end_of_workday) - 1.day)
+        gap_end = Time.parse(@config.beginning_of_workday)
+        gap_begin = (Time.parse(@config.end_of_workday) - 1.day)
       end
       @gap = gap_end - gap_begin
     end
   end
-
 end

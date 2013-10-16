@@ -18,7 +18,16 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'business_time'
 
 class Test::Unit::TestCase
+  def setup
+    @config = BusinessTime::Config.new
+    @config.beginning_of_workday = '9:00 am'
+    @config.end_of_workday = '5:00 pm'
+    @config.work_week = %w[mon tue wed thu fri]
+    @config.work_hours = {}
+    @config.holidays = []
+  end
+
   def teardown
-    BusinessTime::Config.reset
+    @config = nil
   end
 end
