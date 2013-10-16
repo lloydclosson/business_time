@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5343b4c-ae8d-4e71-8b15-d59f614eade1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/generators/business_time/config_generator.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rails_generators/business_time_config/business_time_config_generator.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rails_generators/business_time_config/templates/business_time.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rails_generators/business_time_config/templates/business_time.yml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/business_time/business_days.rb" afterPath="$PROJECT_DIR$/lib/business_time/business_days.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/business_time/business_hours.rb" afterPath="$PROJECT_DIR$/lib/business_time/business_hours.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/business_time/config.rb" afterPath="$PROJECT_DIR$/lib/business_time/config.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/business_time/core_ext/date.rb" afterPath="$PROJECT_DIR$/lib/business_time/core_ext/date.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/business_time/core_ext/fixnum.rb" afterPath="$PROJECT_DIR$/lib/business_time/core_ext/fixnum.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helper.rb" afterPath="$PROJECT_DIR$/test/helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_business_days.rb" afterPath="$PROJECT_DIR$/test/test_business_days.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_business_days_eastern.rb" afterPath="$PROJECT_DIR$/test/test_business_days_eastern.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_business_days_utc.rb" afterPath="$PROJECT_DIR$/test/test_business_days_utc.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_business_hours.rb" afterPath="$PROJECT_DIR$/test/test_business_hours.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_business_hours_eastern.rb" afterPath="$PROJECT_DIR$/test/test_business_hours_eastern.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_business_hours_utc.rb" afterPath="$PROJECT_DIR$/test/test_business_hours_utc.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_calculating_business_duration.rb" afterPath="$PROJECT_DIR$/test/test_calculating_business_duration.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_config.rb" afterPath="$PROJECT_DIR$/test/test_config.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_date_extensions.rb" afterPath="$PROJECT_DIR$/test/test_date_extensions.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_fixnum_extensions.rb" afterPath="$PROJECT_DIR$/test/test_fixnum_extensions.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_time_extensions.rb" afterPath="$PROJECT_DIR$/test/test_time_extensions.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_time_with_zone_extensions.rb" afterPath="$PROJECT_DIR$/test/test_time_with_zone_extensions.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/business_time/core_ext/time.rb" afterPath="$PROJECT_DIR$/lib/business_time/core_ext/time.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="business_time.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,6 +27,7 @@
     <file path="/test_fixnum_extensions.rb" changelist="c5343b4c-ae8d-4e71-8b15-d59f614eade1" time="1381942543740" ignored="false" />
     <file path="/test_time_extensions.rb" changelist="c5343b4c-ae8d-4e71-8b15-d59f614eade1" time="1381943479881" ignored="false" />
     <file path="/test_time_with_zone_extensions.rb" changelist="c5343b4c-ae8d-4e71-8b15-d59f614eade1" time="1381943687160" ignored="false" />
+    <file path="/.gitignore" changelist="c5343b4c-ae8d-4e71-8b15-d59f614eade1" time="1381944282378" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +46,17 @@
     <favorites_list name="business_time" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="18" selection-start="271" selection-end="271" vertical-scroll-proportion="0.7752809">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -84,7 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/test_business_days.rb" />
         <option value="$PROJECT_DIR$/test/test_business_days_eastern.rb" />
         <option value="$PROJECT_DIR$/test/test_business_days_utc.rb" />
         <option value="$PROJECT_DIR$/test/test_business_hours.rb" />
@@ -100,6 +89,7 @@
         <option value="$PROJECT_DIR$/test/test_time_with_zone_extensions.rb" />
         <option value="$PROJECT_DIR$/test/test_time_extensions.rb" />
         <option value="$PROJECT_DIR$/lib/business_time/config.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -421,13 +411,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="209" y="76" width="1620" height="672" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27890724" sideWeight="0.51304346" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27890724" sideWeight="0.51304346" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -503,13 +493,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/business_time/business_hours.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="314" selection-end="314" vertical-scroll-proportion="0.9550562">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/business_time.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="0.33333334">
@@ -611,6 +594,13 @@
     <entry file="file://$PROJECT_DIR$/lib/business_time/version.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="18" selection-start="271" selection-end="271" vertical-scroll-proportion="0.7752809">
           <folding />
         </state>
       </provider>
